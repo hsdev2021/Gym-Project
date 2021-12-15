@@ -14,10 +14,10 @@
       background: url("images/girl2.jpg");
     }
     .left {
-      border: 0px solid rgb(116, 13, 13);
+      border: 0px solid rgb(13, 87, 116);
       display: inline-block;
       position: absolute;
-      left: 20px;
+      left: 40px;
       top: 20px;
     }
     .mid {
@@ -31,10 +31,11 @@
       border: 0px solid rgb(126, 65, 225);
       display: inline-block;
       position: absolute;
-      right: 20px;
+      right: 30px;
       top: 20px;
     }
     .navbar {
+      display: flex;
     }
     .navbar li {
       display: inline-block;
@@ -54,11 +55,13 @@
     }
     .left div {
       text-align: center;
+      line-height: 29px;
+      font-size: 26px;
     }
     .btn {
       margin: 0px 10px;
       background-color: black;
-      color: rgb(255, 255, 255);
+      color: rgb(241, 216, 216);
       padding: 2px 24px;
       border: 2px solid gray;
       border-radius: 5px;
@@ -69,12 +72,49 @@
     .btn:hover {
       background-color: rgb(184, 79, 79);
     }
+    .logo {
+      color: wheat;
+    }
+    .container {
+      margin: 120px;
+      margin-left: 1px;
+      padding: 10px;
+      border-radius: 10px;
+      width: 500px;
+    }
+    .container h2 {
+      text-align: center;
+      font-size: 28px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    .formgroup input {
+      text-align: center;
+      display: block;
+      width: 350px;
+      padding: 5px;
+      border: 0px solid red;
+      margin: 5px auto;
+      border-radius: 5px;
+      font-size: 15px;
+      background-color: rgb(80, 55, 55);
+    }
+
+    .container button {
+      display: block;
+      margin: 10px auto;
+      width: 350px;
+      height: 40px;
+      font-size: 20px;
+      color: rgb(24, 2, 2);
+      background-color: rgb(79, 184, 97);
+    }
   </style>
   <body>
     <header class="header">
       <div class="left">
         <img src="images/girl1.jpg" alt=" " />
-        <div>Fitness</div>
+        <div class="logo">Fitness</div>
       </div>
       <div class="mid">
         <ul class="navbar">
@@ -89,5 +129,23 @@
         <button class="btn">Email us</button>
       </div>
     </header>
+    <div class="container">
+      <h2>Join the best gym of Delhi now</h2>
+      <form action="noaction.php">
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter you gender" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter you locality" />
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </div>
   </body>
 </html>
